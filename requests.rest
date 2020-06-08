@@ -1,6 +1,18 @@
 @HOST=127.0.0.1
-@PORT=3000 
+@PORT=3000
 @BASE_URL=http://{{HOST}}:{{PORT}}/api/products
 
-### unprotected
+### get all
 GET {{BASE_URL}}/
+
+### get one
+GET {{BASE_URL}}/1
+
+### create one
+POST {{BASE_URL}}/
+
+### patch one
+PATCH {{BASE_URL}}/1
+
+### delete one
+DELETE {{BASE_URL}}/1
