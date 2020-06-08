@@ -6,13 +6,24 @@
 GET {{BASE_URL}}/
 
 ### get one
-GET {{BASE_URL}}/1
+GET {{BASE_URL}}/5eddae10550e022a105f6259
 
 ### create one
 POST {{BASE_URL}}/
+Content-Type: application/json
+
+{
+  "name": "Screen",
+  "price": 23500
+}
 
 ### patch one
-PATCH {{BASE_URL}}/1
+PATCH {{BASE_URL}}/5eddae10550e022a105f6259
+Content-Type: application/json
+
+{
+  "price": 3890
+}
 
 ### delete one
-DELETE {{BASE_URL}}/1
+DELETE {{BASE_URL}}/5eddae892f5910262cc2e229
