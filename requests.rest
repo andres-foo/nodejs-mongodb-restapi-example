@@ -1,0 +1,6 @@
+@HOST=127.0.0.1
+@PORT=3000 
+@BASE_URL=http://{{HOST}}:{{PORT}}/api/products
+
+### unprotected
+GET {{BASE_URL}}/
